@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+
+int x = 3;
+int y = 5;
+int z = 12;
+
+int a = x + y + z;
+int b = x * y * z;
+int c = z - y - x;
+
+printf("The answers to the questions are:\n");
+printf("a equals: %d\n", a);
+printf("b equals: %d\n", b);
+printf("c equals: %d\n", c);
+return 0;
+}
