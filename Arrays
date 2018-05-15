@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+int day[7];
+
+day[0] = 370;
+day[1] = 260;
+day[2] = 200;
+day[3] = 460;
+day[4] = 550;
+day[5] = 600;
+day[6] = 890;
+
+int averageEarnings = (day[0] + day[1] + day[2] + day[3] + day[4] + day[5] + day[6] / 7);
+int totalEarnings = (day[0] + day[1] + day[2] + day[3] + day[4] + day[5] + day[6]);
+int taxedEarnings = totalEarnings * 0.25;
+int afterTaxedEarnings = totalEarnings * 0.75;
+int companyEarnings = totalEarnings * 0.10;
+int businessEarnings = totalEarnings * 0.15;
+int managerEarnings = totalEarnings - taxedEarnings - companyEarnings - businessEarnings;
+
+printf("The average earnings for the week is: $%d\n", averageEarnings);
+printf("The total earnings for the week is: $%d\n", totalEarnings);
+printf("The taxes that need to be paid is: $%d\n", taxedEarnings);
+printf("After taxes you have earned: $%d\n", afterTaxedEarnings);
+printf("Your business expenditure is?: $%d\n", bsinessEarnings);
+printf("The company will earn: $%d\n", companyEarnings);
+printf("You will earn: $%d\n", managerEarnings);
+
+return 0;
+
+}
+
