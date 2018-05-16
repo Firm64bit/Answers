@@ -1,0 +1,29 @@
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+  char * employees[6];
+
+  employees[0] = "Bob";
+  employees[1] = "John";
+  employees[2] = "Charlie";
+  employees[3] = "Smith";
+  employees[4] = "Brad";
+  employees[5] = "Austin";
+  employees[6] = "Hunter";  
+
+  printf("Bob has %ld letters in it.\n", strlen(employees[0]));
+  printf("John has %ld letters in it.\n", strlen(employees[1]));
+  printf("Charlie has %ld letters in it.\n", strlen(employees[2]));
+  printf("Smith has %ld letters in it.\n", strlen(employees[3]));
+  printf("Brad has %ld letters in it.\n", strlen(employees[4]));
+  printf("Austin has %ld letters in it.\n", strlen(employees[5]));
+  printf("Hunter has %ld letters in it. \n", strlen(employees[6]));
+
+  int compare = strcmp(employees[0], employees[2]);
+  printf("The retuned value of the comparison is %d\n", compare);
+
+  return 0;
+}
